@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <!-- Change this to your name-->
     <meta name="author" content="Perrin Le" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Perrin Le</title>
     <!-- Classless CSS Stylesheet - https://oxal.org/projects/sakura/ -->
@@ -13,7 +13,7 @@
   <body>
     <header>
       <!-- My picture and a small description -->
-      <img class="potrait" src="img/perrin.jpg"/>
+      <img class="potrait" src="img/perrin.jpg" />
       <h1>Perrin Le</h1>
       <h3>UofT Graduate, Seneca College Student, Aspiring Computer Programmer</h3>
       <a id="resume" class="headerbutton" href="./ple resume.pdf" download>⤓ Resume</a>
@@ -22,16 +22,23 @@
     <hr />
     <div class="info">
       <!-- Create a grid of 2 columns -->
-      <br>
+      <br />
       <div class="infocolumns">
         <div class="infocolumn">
           <h5>About Me</h5>
           <p>Hi, I'm Perrin.</p>
-          <p>Recently I completed my bachelors degree at UofT in statistics, towards the end of my degree I found an interest for coding and decided to enroll into Seneca. I am currently in the second semester in Seneca's CPA program, and strive learn as much as I can so I can contribute good code when I start my coop placement. As of the end of this semester I would be comfortable with introductory C++ and JavaScript.</p><br>
+          <p>
+            Recently I completed my bachelors degree at UofT in statistics, towards the end of my
+            degree I found an interest for coding and decided to enroll into Seneca. I am currently
+            in the second semester in Seneca's CPA program, and strive learn as much as I can so I
+            can contribute good code when I start my coop placement. As of the end of this semester
+            I would be comfortable with introductory C++ and JavaScript.
+          </p>
+          <br />
         </div>
         <div class="infocolumn">
           <h5>Basic Information</h5>
-          <br>
+          <br />
           <div class="basicinfo">
             <p><b>AGE:</b></p>
             <p>24</p>
@@ -51,16 +58,22 @@
         </div>
       </div>
       <h5>Academic Honesty</h5>
-      <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p>
+      <p>
+        I declare that my assessment is wholly my own work in accordance with Seneca Academic
+        Policy. No part of this assessment has been copied manually or electronically from any other
+        source (including web sites) except for the information supplied by the WEB222 instructors
+        and / or made available in this assessment for my use. I also declare that no part of this
+        assignment has been distributed to other students.
+      </p>
     </div>
-    <hr/>
+    <hr />
     <div class="education">
-      <br>
+      <br />
       <h5>Education</h5>
-      <br>
+      <br />
       <div class="educationcard" id="uoft">
         <div class="educationtype">
-          <br>
+          <br />
           <h5>Bachelor's Degree</h5>
           <p>2016-2021</p>
         </div>
@@ -73,7 +86,7 @@
       </div>
       <div class="educationcard" id="seneca">
         <div class="educationtype">
-          <br>
+          <br />
           <h5>Advanced Diploma</h5>
           <p>2021-2024 (Expected)</p>
         </div>
@@ -85,16 +98,23 @@
         </div>
       </div>
     </div>
-    <hr>
+    <hr />
     <a id="contact"></a>
     <div class="contactmecontainer">
-      <br>
+      <br />
       <h5>Contact Me</h5>
-      <form id="contactform" name="contactf" method="post" action="https://httpbin.org/post" onsubmit="return formValidation();"><br>
+      <form
+        id="contactform"
+        name="contactf"
+        method="post"
+        action="https://httpbin.org/post"
+        onsubmit="return formValidation();"
+      >
+        <br />
         <label for="name">Name: </label>
-        <input type="text" name="name" id="name" placeholder="Enter Name"/>
+        <input type="text" name="name" id="name" placeholder="Enter Name" />
         <label for="email">Email: </label>
-        <input type="email" name="email" id="email" placeholder="ex. Bill@gmail.com"/>
+        <input type="email" name="email" id="email" placeholder="ex. Bill@gmail.com" />
         <label for="city">City</label>
         <input type="text" id="city" name="city" list="autocomplete" />
         <datalist id="autocomplete">
@@ -122,11 +142,11 @@
           <option label="Oshawa" value="Oshawa"></option>
         </datalist>
         <label for="postal">Postal code: </label>
-        <input type="text" name="postal" id="postal" placeholder="6 Alphanumberic Characters"/>
+        <input type="text" name="postal" id="postal" placeholder="6 Alphanumberic Characters" />
         <label for="reason">Reason for contact: </label>
-        <input type="radio" name="reason" id="reason-1" value="question"/>Question
-        <input type="radio" name="reason" id="reason-2" value="comment"/>Comment
-        <input type="radio" name="reason" id="reason-3" value="hiring"/>Hiring
+        <input type="radio" name="reason" id="reason-1" value="question" />Question
+        <input type="radio" name="reason" id="reason-2" value="comment" />Comment
+        <input type="radio" name="reason" id="reason-3" value="hiring" />Hiring
         <div id="hiringrate">
           <!-- Dynamically add input box if hiring here -->
         </div>
@@ -135,13 +155,16 @@
         <label for="subscribe">Would you like to be notified of updates on my website?</label>
         <!-- Default my radio to yes so people are more likely to subscribe -->
         <!-- Simply because they did not notice -->
-        <input type="radio" name="subscribe" id="subscribe-1" value="yes" checked/>Yes
-        <input type="radio" name="subscribe" id="subscribe-2" value="no"/>No
-        <br><br>
+        <input type="radio" name="subscribe" id="subscribe-1" value="yes" checked />Yes
+        <input type="radio" name="subscribe" id="subscribe-2" value="no" />No <br /><br />
         <div id="errors">
           <!-- Dynamically display errors in form -->
         </div>
-        <input type='submit' id="submit" value='Submit'>&nbsp;&nbsp;&nbsp;<input type='reset' id="reset" value='Clear'>
+        <input type="submit" id="submit" value="Submit" />&nbsp;&nbsp;&nbsp;<input
+          type="reset"
+          id="reset"
+          value="Clear"
+        />
       </form>
     </div>
     <!-- Main App JavaScript File -->
