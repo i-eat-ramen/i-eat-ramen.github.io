@@ -336,6 +336,7 @@ fieldset {
 
 .educationcard:hover{
   box-shadow: 9px 9px rgb(0, 118, 253);
+  cursor:pointer;
 }
 
 .educationtype{
@@ -387,4 +388,8 @@ header {
   padding-left: 2%;
   padding-right: 1%;
   padding-bottom: 1em;
+}
+
+#errors{
+  color:red;
 }
